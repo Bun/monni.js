@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>»&lt;[°3°]</title>
+    </head>
+    <body>
+        <script src="monni.js"></script>
+        <script>
+var p;
+for (var i = 0; i < 50; i++) {
+    p = document.createElement('p');
+    p.textContent = 'Element #' + (i + 1);
+    p.style.marginLeft = ((Math.random() * (document.body.clientWidth - 50)) | 0) + 'px';
+    document.body.appendChild(p);
+}
+monni(50, function(elem) {
+    if (elem && elem.tagName == 'P') {
+        elem.style.background = '#000';
+        elem.style.color = '#FFF';
+    }
+});
+        </script>
+    </body>
+</html>
